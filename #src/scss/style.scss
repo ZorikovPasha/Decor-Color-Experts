@@ -333,11 +333,9 @@
   }
 
   &__item--result {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     
-    background-image: url('../images/survey/7.jpg');
+    background-image: url('../images/survey/7.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,6 +344,14 @@
   }
 }
 
+[data-survey-item] {
+  display: none;
+
+  &.shown {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .item {
 
@@ -400,6 +406,7 @@
   // .item__label
 
   &__label {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -422,6 +429,11 @@
       box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
       border-radius: 10px;
       color: #fff;
+    }
+
+    & #messenger-error {
+      position: absolute;
+      bottom: 0;
     }
   }
 
@@ -591,7 +603,7 @@
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0px 0px 74px rgba(0, 0, 0, 0.8);
-    max-width: 525px;
+    max-width: 620px;
     margin: 0 auto;
     padding-bottom: 20px;
   }

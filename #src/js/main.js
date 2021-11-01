@@ -1,5 +1,6 @@
 import sliders from './modules/sliders'
 import popups from './modules/popup'
+import Survey from './modules/survey'
 
 function makeInputChosen() {
   if ( !$(this).hasClass('active') ) {
@@ -16,6 +17,14 @@ $(function() {
   popups()
 
   $('[data-fancybox]').fancybox({});
-
   $('.item__label').on('click', makeInputChosen)
+
+  const surveyItems = $('[data-survey-item]')
+  const survey = new Survey(surveyItems)
+
+  survey.enableMoveOn()
+  survey.enableMoveBackw()
+  survey.displayCurrentQuestion()
+  survey.blockSubmit()
+  survey.submitForm()
 })

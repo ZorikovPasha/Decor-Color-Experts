@@ -33,6 +33,9 @@ function formValidate(selector) {
       },
       isAgree: {
         required: "Заполните данное поле",
+      },
+      messenger: {
+        required: "Заполните данное поле",
       }
     },
   });

@@ -82,8 +82,8 @@ const minifyJS = function() {
     .pipe(uglify())
     .pipe(sourcemaps.write('./'))
     .pipe(dest('./dist/js/'))
+    .pipe(browsersync.reload( {stream: true} ))
 }
-//    .pipe(buffer())
 
 const imageMin = () => {
   return src('#src/images/**/*')
@@ -137,6 +137,4 @@ const watchFiles = () => {
 
 
 exports.default = parallel(minifyJS, imageMin, sassConvert, carryFonts, initBrowserSync, htmlInclude, watchFiles)
-// exports.default = minifyJS
-
 exports.minifyAllLibs = parallel(cssLibsMinify, jsLibsMinify)

@@ -232,9 +232,9 @@
               <p class="survey__box-title">Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив всего на 5 вопросов</p>
             </div>
             <div class="survey__box">
-              <form action="">
+              <form action="" data-survey-form>
                 <div class="survey__items">
-                  <div class="survey__item item">
+                  <div class="survey__item item" data-survey-item>
                     <div class="item__top">
                       <p class="survey__box-title">Какая услуга Вас интересует?</p>
                       <p class="item__progress">Вопрос 1 из 5</p>
@@ -243,32 +243,32 @@
                       <div class="item__options">
                         <label class="item__label">
                           <span class="item__option-txt">Декоративная штукатурка</span>
-                          <input type="radio" class="item__radio-real" name="service">
+                          <input type="radio" class="item__radio-real" name="service" value="stukaturka" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
                           <span class="item__option-txt">Покраска</span>
-                          <input type="radio" class="item__radio-real" name="service">
+                          <input type="radio" class="item__radio-real" name="service" value="paint" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
                           <span class="item__option-txt">Декоративная штукатурка + покраска</span>
-                          <input type="radio" class="item__radio-real" name="service">
+                          <input type="radio" class="item__radio-real" name="service" value="both" required>
                           <span class="item__radio-fake"></span>
                         </label>
                       </div>
                       <div class="item__visual">
                         <div class="item__images">
-                          <img src="images/survey/1.jpg" alt="survey">
+                          <img src="images/survey/1.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev" disabled>Назад</button>
-                          <button class="item__next">Далее</button>
+                          <button class="item__prev" data-prev disabled>Назад</button>
+                          <button class="item__next" data-next>Далее</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="survey__item item">
+                  <div class="survey__item item" data-survey-item>
                     <div class="item__top">
                       <p class="survey__box-title">Где будут выполняться работы?</p>
                       <p class="item__progress">Вопрос 2 из 5</p>
@@ -277,27 +277,27 @@
                       <div class="item__options">
                         <label class="item__label">
                           <span class="item__option-txt">В помещении </span>
-                          <input type="radio" class="item__radio-real" name="place">
+                          <input type="radio" class="item__radio-real" name="place" value="inside" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
                           <span class="item__option-txt">Фасад</span>
-                          <input type="radio" class="item__radio-real" name="place">
+                          <input type="radio" class="item__radio-real" name="place" value="facade" required>
                           <span class="item__radio-fake"></span>
                         </label>
                       </div>
                       <div class="item__visual">
                         <div class="item__images">
-                          <img src="images/survey/2.jpg" alt="survey">
+                          <img src="images/survey/2.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev">Назад</button>
-                          <button class="item__next">Далее</button>
+                          <button class="item__prev" data-prev>Назад</button>
+                          <button class="item__next" data-next>Далее</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="survey__item item">
+                  <div class="survey__item item" data-survey-item>
                     <div class="item__top">
                       <p class="survey__box-title">Где будут выполняться работы?</p>
                       <p class="item__progress">Вопрос 3 из 5</p>
@@ -306,32 +306,27 @@
                       <div class="item__options">
                         <label class="item__label">
                           <span class="item__option-txt">Менее 100 м2</span>
-                          <input type="radio" class="item__radio-real" name="square">
+                          <input type="radio" class="item__radio-real" name="square" value="less" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
                           <span class="item__option-txt">Более 100 м2</span>
-                          <input type="radio" class="item__radio-real" name="square">
-                          <span class="item__radio-fake"></span>
-                        </label>
-                        <label class="item__label">
-                          <input type="text" class="item__option-input" placeholder="Точная площадь">
-                          <input type="radio" class="item__radio-real" name="square">
+                          <input type="radio" class="item__radio-real" name="square" value="more" required>
                           <span class="item__radio-fake"></span>
                         </label>
                       </div>
                       <div class="item__visual">
                         <div class="item__images">
-                          <img src="images/survey/3.jpg" alt="survey">
+                          <img src="images/survey/3.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev">Назад</button>
-                          <button class="item__next">Далее</button>
+                          <button class="item__prev" data-prev>Назад</button>
+                          <button class="item__next" data-next>Далее</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="survey__item item">
+                  <div class="survey__item item" data-survey-item>
                     <div class="item__top">
                       <p class="survey__box-title">Уровень подготовки стен?</p>
                       <p class="item__progress">Вопрос 4 из 5</p>
@@ -340,32 +335,27 @@
                       <div class="item__options">
                         <label class="item__label">
                           <span class="item__option-txt">Оштукатуренные стены </span>
-                          <input type="radio" class="item__radio-real" name="prepare">
+                          <input type="radio" class="item__radio-real" name="prepare" value="shtukaturka" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
                           <span class="item__option-txt">Ошпаклеванные стены</span>
-                          <input type="radio" class="item__radio-real" name="prepare">
-                          <span class="item__radio-fake"></span>
-                        </label>
-                        <label class="item__label">
-                          <input type="text" class="item__option-input" placeholder="Другое">
-                          <input type="radio" class="item__radio-real" name="prepare">
+                          <input type="radio" class="item__radio-real" name="prepare" value="shpaklevka" required>
                           <span class="item__radio-fake"></span>
                         </label>
                       </div>
                       <div class="item__visual">
                         <div class="item__images">
-                          <img src="images/survey/4.jpg" alt="survey">
+                          <img src="images/survey/4.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev">Назад</button>
-                          <button class="item__next">Далее</button>
+                          <button class="item__prev" data-prev>Назад</button>
+                          <button class="item__next" data-next>Далее</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="survey__item item">
+                  <div class="survey__item item" data-survey-item>
                     <div class="item__top">
                       <p class="survey__box-title">Где находится объект? </p>
                       <p class="item__progress">Вопрос 5 из 5</p>
@@ -374,71 +364,64 @@
                       <div class="item__options">
                         <label class="item__label">
                           <span class="item__option-txt">Одесса </span>
-                          <input type="radio" class="item__radio-real" name="location">
+                          <input type="radio" class="item__radio-real" name="location" value="Odessa" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
                           <span class="item__option-txt">Пригород</span>
-                          <input type="radio" class="item__radio-real" name="location">
+                          <input type="radio" class="item__radio-real" name="location" value="suburban" required>
                           <span class="item__radio-fake"></span>
                         </label>
                       </div>
                       <div class="item__visual">
                         <div class="item__images">
-                          <img src="images/survey/5.jpg" alt="survey">
+                          <img src="images/survey/5.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev">Назад</button>
-                          <button class="item__next">Далее</button>
+                          <button class="item__prev" data-prev>Назад</button>
+                          <button class="item__next" data-next>Далее</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="survey__item item">
+                  <div class="survey__item item" data-survey-item>
                     <div class="item__top">
                       <p class="survey__box-title">Куда отправить результат?</p>
                     </div>
                     <div class="item__body">
                       <div class="item__options">
                         <div class="item__input-wrapper">
-                          <input type="text" class="item__option-input" placeholder="Имя">
+                          <input type="text" class="item__option-input" name="name" placeholder="Имя" required>
                         </div>
                         <div class="item__input-wrapper">
-                          <input type="text" class="item__option-input" placeholder="Номер телефона">
+                          <input type="text" class="item__option-input" name="phone" placeholder="Номер телефона" required>
                         </div>
 
                         <div class="item__labels">
                           <label class="item__label">
                             <span class="item__option-txt item__option-txt--tg">Telegram </span>
-                            <input type="radio" class="item__radio-real" name="messenger">
+                            <input type="radio" class="item__radio-real" name="messenger" value="tg" required>
                             <span class="item__radio-fake"></span>
                           </label>
                           <label class="item__label">
                             <span class="item__option-txt item__option-txt--viber">Viber</span>
-                            <input type="radio" class="item__radio-real" name="messenger">
+                            <input type="radio" class="item__radio-real" name="messenger" value="vb" required>
                             <span class="item__radio-fake"></span>
                           </label>  
                         </div>
-
-                        <label class="item__label">
-                          <span class="item__option-txt item__option-txt--mail"></span>
-                          <input type="text" class="item__option-input" placeholder="Mail">
-                          <input type="radio" class="item__radio-real" name="prepare">
-                          <span class="item__radio-fake"></span>
-                        </label>
                       </div>
                       <div class="item__visual">
                         <div class="item__images">
-                          <img src="images/survey/6.jpg" alt="survey">
+                          <img src="images/survey/6.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev">Назад</button>
-                          <button class="item__next" type="submit">Отправить</button>
+                          <button class="item__prev" data-prev>Назад</button>
+                          <button class="item__next" type="submit" data-next data-survey-submit>Отправить</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="survey__item survey__item--result item">
+                  <div class="survey__item survey__item--result item" data-survey-item>
                     <p class="item__message">Спасибо, что выбрали нас!</p>
                     <p class="item__message">Менеджер свяжется с Вами в ближайшее время.</p>
                   </div>
