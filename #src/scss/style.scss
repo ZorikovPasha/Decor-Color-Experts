@@ -2,7 +2,8 @@
 @import "_global.scss";
 @import "_header.scss";
 @import "slick.scss";
-
+@import "_footer.scss";
+@import "_popup.scss";
 
 .top {
 
@@ -32,7 +33,7 @@
   &__title {
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 56px;
+    font-size: 55px;
     line-height: 130%;
     color: #FFFFFF;
     text-shadow: 0px 0px 166px #000000;
@@ -141,9 +142,6 @@
       object-fit: cover;
     }
   }
-}
-.about--decor {
-  @extend %decor;
 }
 
 .why {
@@ -285,10 +283,6 @@
   }
 }
 
-.portfolio--decor {
-  @extend %decor;
-}
-
 .survey {
 
   background-image: url('../images/bg-decor.svg');
@@ -339,6 +333,10 @@
   }
 
   &__item--result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     background-image: url('../images/survey/7.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -408,9 +406,16 @@
     padding: 20px;
     color: #000;
 
+    cursor: pointer;
     background: #FFFFFF;
     box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    opacity: 1;
+    transition: all .2s;
+    
+    &:hover {
+      opacity: .7;
+    }
 
     &.active {
       background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
@@ -647,9 +652,6 @@
     padding: 20px 46px;
   }
 }
-.catalog--decor {
-  @extend %decor;
-}
 
 .reviews {
 
@@ -736,10 +738,92 @@
   }
 }
 
+.discuss {
 
-.font {
-  font-family: 'Gothic A1', sans-serif;
+  // .discuss__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 0;
+  }
+
+  // .discuss__form
+
+  &__form {
+    width: 35%;
+    padding-right: 10px;
+  }
+
+  // .discuss__title
+
+  &__title {
+    @extend %title;
+    color: #000;
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  // &__label + &__label {
+  //   margin-top: 40px;
+  // }
+
+  // .discuss__input
+
+  &__input {
+
+    width: 100%;
+
+    &,
+    &::placeholder {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+      color: #000000;
+    }
+
+    &::placeholder {
+      color: rgba(#000000, .5);
+    }
+
+    display: block;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #000;
+  }
+
+  // .discuss__submit
+
+  &__submit {
+    margin-top: 20px;
+    padding: 20px 50px;
+  }
+
+  // .discuss__images
+
+  &__images {
+    width: 55.2%;
+
+    position: relative;
+    padding-bottom: 36%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
 }
+
+
 
 @import "_media.scss";
 // @import "_animate.scss";

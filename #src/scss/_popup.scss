@@ -1,0 +1,169 @@
+.popup,
+.popup-message {
+
+  position: fixed;
+  z-index: 996;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(#000, .5);
+
+  display: none;
+
+  &.shown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // .popup__body
+
+  &__body {
+    max-width: 440px;
+    width: 100%;
+  
+    overflow: auto;
+    padding: 30px 20px;
+  
+    background: rgba(243, 243, 243, 1);
+    backdrop-filter: blur(14px);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 22px;
+    transition: all .3s;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+
+  // .popup__title
+
+  &__title {
+    margin: 0 20px 26px 0;
+  }
+
+  // .popup__text
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  // .popup__input
+
+  &__input {
+
+    width: 100%;
+
+    &,
+    &::placeholder {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+      color: #000000;
+    }
+
+    &::placeholder {
+      color: rgba(#000000, .5);
+    }
+
+    display: block;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #000;
+
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  &__line {
+    position: relative;
+    display: flex;
+    padding-bottom: 20px;
+  }
+}
+
+.form-label {
+
+  // .form-label__checkbox-real
+
+  &__checkbox-real {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+  }
+
+  // .form-label__checkbox-fake
+
+  &__checkbox-fake {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__checkbox-real:checked ~ .form-label__checkbox-fake::after {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 7px;
+    top: 5px;
+    left: 1px;
+    background-image: url('../images/checkmark.svg');
+  }
+
+  // .form-label__text
+
+  &__text {
+    width: 100%;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 120%;
+    cursor: pointer;
+
+    a {
+      display: inline;
+      text-decoration: underline;
+    }
+  }
+}
+
+.error {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+
+  display: block;
+
+  margin: 5px 0;
+
+  color: red;
+}
+
+#isAgree-error {
+  position: absolute;
+  bottom: 0;
+}

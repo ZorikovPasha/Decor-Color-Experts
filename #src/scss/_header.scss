@@ -35,6 +35,15 @@
     text-decoration: underline;
     white-space: nowrap;
   }
+
+  & a {
+    opacity: 1;
+    transition: all .2s;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
 }
 
 .menu {

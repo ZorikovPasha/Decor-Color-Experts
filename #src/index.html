@@ -16,487 +16,530 @@
 <body>
 
   <div class="wrapper">
-    
-  @include('html-parts/header.html')
+  
+    @include('html-parts/header.html')
 
-  <main class="main">
-    <section class="top">
-      <div class="container">
-        <div class="top__inner">
-          <div class="top__text">
-            <h1 class="top__title">Нанесение декоративных штукатурок премиум сегмента в современном стиле </h1>
-            <div class="top__promo">
-              <p class="top__promo-text">Наши клиенты получают скидку 10% на материалы</p>
-              </div>
-          </div>
-          <div>
-            <button class="top__btn btn">Заказать проект</button>
-          </div>
-        </div>
-      </div>
-    </section>
+    @include('html-parts/popups.html')
 
-    <section class="about about--decor">
-      <div class="about__container">
-        <div class="about__inner">
-          <div class="about__text">
-            <h3 class="about__title title">О нас</h3>
-            <p class="about__par">
-              Мы хотим что бы наши проекты соответствовали нашим высоким требованиям и желаниям заказчика, были актуальными и уникальными.
-            </p>
-            <p class="about__par">
-              
-              <span>Décor color expert</span>
-                - это команда профессионалов, которые воплощают в реальность самые сложные пожелания заказчика. Мы не просто делаем штукатурные работы и предоставляем услуги по окрашиванию стен, а создаем искусство, которое долгие годы будет радовать Ваш глаз и сохранит первоклассное качество.
-            </p>
-          </div>
-          <div class="about__images">
-            <img src="images/about-img.jpg" alt="bathroom">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="why">
-      <div class="container">
-        <div class="why__inner">
-          <h3 class="why__title">Почему мы?</h3>
-          <div class="why__items">
-            <div class="why__item">
-              <img src="images/why/1.svg" alt="checkmark">
-              <h6 class="why__item-title">Первоклассное качество </h6>
-              <p class="why__item-text">Высокое качество исполнения реализованных проектов и благодарные отзывы счастливых клиентов позволяют утверждать что декорирование стен – наше призвание.</p>
+    <main class="main">
+      <section class="top" id="top">
+        <div class="container">
+          <div class="top__inner">
+            <div class="top__text">
+              <h1 class="top__title">Нанесение декоративных штукатурок премиум сегмента в современном стиле </h1>
+              <div class="top__promo">
+                <p class="top__promo-text">Наши клиенты получают скидку 10% на материалы</p>
+                </div>
             </div>
-            <div class="why__item">
-              <img src="images/why/2.svg" alt="globe">
-              <h6 class="why__item-title">Материалы лучших брендов</h6>
-              <p class="why__item-text">Подбор материалов берем на себя. Работаем с такими Торговыми Марками как Feidal, Spiver, Oikos, elf decor, San Marco</p>
-            </div>
-            <div class="why__item">
-              <img src="images/why/3.svg" alt="car">
-              <h6 class="why__item-title">Скорость выполнения работ</h6>
-              <p class="why__item-text">Приступаем к выполнению работ по Вашему заказку сразу после выезда специалиста на осмотр объекта. Результат от 3-х рабочих дней.</p>
-            </div>
-            <div class="why__item">
-              <img src="images/why/4.svg" alt="infinity">
-              <h6 class="why__item-title">Бесконечный творческий потенциал </h6>
-              <p class="why__item-text">Наша команда - это не только крутые специалисты, но и креативные творческие люди, которые знают как воплотить в жизнь Ваши идеи</p>
+            <div>
+              <button class="top__btn btn" data-callback>Заказать проект</button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="portfolio portfolio--decor">
-      <div class="container">
-        <div class="portfolio__inner">
-          <h3 class="portfolio__title">Портфолио</h3>
-          <div class="portfolio__slider">
-            <div class="portfolio__slider-item">
-              <div class="portfolio__slider-box">
-                <div class="portfolio__slider-images">
-                  <img src="images/portfolio/1.jpg" alt="cover">
-                </div>
-                <p class="portfolio__slider-name">Travertino FEIDAL</p>
-                <p class="portfolio__slider-text">Матеріал дає можливість отримати ефект природного каменю травертину.</p>  
-              </div>
+      <section class="about section--decor">
+        <div class="about__container">
+          <div class="about__inner">
+            <div class="about__text">
+              <h3 class="about__title title">О нас</h3>
+              <p class="about__par">
+                Мы хотим что бы наши проекты соответствовали нашим высоким требованиям и желаниям заказчика, были актуальными и уникальными.
+              </p>
+              <p class="about__par">
+                
+                <span>Décor color expert</span>
+                  - это команда профессионалов, которые воплощают в реальность самые сложные пожелания заказчика. Мы не просто делаем штукатурные работы и предоставляем услуги по окрашиванию стен, а создаем искусство, которое долгие годы будет радовать Ваш глаз и сохранит первоклассное качество.
+              </p>
             </div>
-            <div class="portfolio__slider-item">
-              <div class="portfolio__slider-box">
-                <div class="portfolio__slider-images">
-                  <img src="images/portfolio/2.jpg" alt="cover">
-                </div>
-                <p class="portfolio__slider-name">Innenlatex Seidenmatt FEIDAL</p>
-                <p class="portfolio__slider-text">Особливо стійка до миття та до дії миючих та дезінфікуючих засобів, має нейтральний запах.</p>  
-              </div>
+            <div class="about__images">
+              <img src="images/about-img.jpg" alt="bathroom">
             </div>
-            <div class="portfolio__slider-item">
-              <div class="portfolio__slider-box">
-                <div class="portfolio__slider-images">
-                  <img src="images/portfolio/1.jpg" alt="cover">
-                </div>
-                <p class="portfolio__slider-name">Travertino FEIDAL</p>
-                <p class="portfolio__slider-text">Матеріал дає можливість отримати ефект природного каменю травертину.</p>  
-              </div>
-            </div>
-            <div class="portfolio__slider-item">
-              <div class="portfolio__slider-box">
-                <div class="portfolio__slider-images">
-                  <img src="images/portfolio/2.jpg" alt="cover">
-                </div>
-                <p class="portfolio__slider-name">Innenlatex Seidenmatt FEIDAL</p>
-                <p class="portfolio__slider-text">Особливо стійка до миття та до дії миючих та дезінфікуючих засобів, має нейтральний запах.</p>  
-              </div>
-            </div>
-            <div class="portfolio__slider-item">
-              <div class="portfolio__slider-box">
-                <div class="portfolio__slider-images">
-                  <img src="images/portfolio/1.jpg" alt="cover">
-                </div>
-                <p class="portfolio__slider-name">Travertino FEIDAL</p>
-                <p class="portfolio__slider-text">Матеріал дає можливість отримати ефект природного каменю травертину.</p>  
-              </div>
-            </div>
-            <div class="portfolio__slider-item">
-              <div class="portfolio__slider-box">
-                <div class="portfolio__slider-images">
-                  <img src="images/portfolio/2.jpg" alt="cover">
-                </div>
-                <p class="portfolio__slider-name">Innenlatex Seidenmatt FEIDAL</p>
-                <p class="portfolio__slider-text">Особливо стійка до миття та до дії миючих та дезінфікуючих засобів, має нейтральний запах.</p>  
-              </div>
-            </div>
-
-          </div>
-          <div class="portfolio__btn-wraper">
-            <button class="portfolio__btn btn">Оставить заявку</button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="survey">
-      <div class="survey__container">
-        <div class="survey__inner">
-          <div class="survey__box">
-            <p class="survey__box-title">Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив всего на 5 вопросов</p>
+      <section class="why">
+        <div class="container">
+          <div class="why__inner">
+            <h3 class="why__title">Почему мы?</h3>
+            <div class="why__items">
+              <div class="why__item">
+                <img src="images/why/1.svg" alt="checkmark">
+                <h6 class="why__item-title">Первоклассное качество </h6>
+                <p class="why__item-text">Высокое качество исполнения реализованных проектов и благодарные отзывы счастливых клиентов позволяют утверждать что декорирование стен – наше призвание.</p>
+              </div>
+              <div class="why__item">
+                <img src="images/why/2.svg" alt="globe">
+                <h6 class="why__item-title">Материалы лучших брендов</h6>
+                <p class="why__item-text">Подбор материалов берем на себя. Работаем с такими Торговыми Марками как Feidal, Spiver, Oikos, elf decor, San Marco</p>
+              </div>
+              <div class="why__item">
+                <img src="images/why/3.svg" alt="car">
+                <h6 class="why__item-title">Скорость выполнения работ</h6>
+                <p class="why__item-text">Приступаем к выполнению работ по Вашему заказку сразу после выезда специалиста на осмотр объекта. Результат от 3-х рабочих дней.</p>
+              </div>
+              <div class="why__item">
+                <img src="images/why/4.svg" alt="infinity">
+                <h6 class="why__item-title">Бесконечный творческий потенциал </h6>
+                <p class="why__item-text">Наша команда - это не только крутые специалисты, но и креативные творческие люди, которые знают как воплотить в жизнь Ваши идеи</p>
+              </div>
+            </div>
           </div>
-          <div class="survey__box">
-            <form action="">
-              <div class="survey__items">
-                <div class="survey__item item">
-                  <div class="item__top">
-                    <p class="survey__box-title">Какая услуга Вас интересует?</p>
-                    <p class="item__progress">Вопрос 1 из 5</p>
-                  </div>
-                  <div class="item__body">
-                    <div class="item__options">
-                      <label class="item__label">
-                        <span class="item__option-txt">Декоративная штукатурка</span>
-                        <input type="radio" class="item__radio-real" name="service">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                      <label class="item__label">
-                        <span class="item__option-txt">Покраска</span>
-                        <input type="radio" class="item__radio-real" name="service">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                      <label class="item__label">
-                        <span class="item__option-txt">Декоративная штукатурка + покраска</span>
-                        <input type="radio" class="item__radio-real" name="service">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                    </div>
-                    <div class="item__visual">
-                      <div class="item__images">
-                        <img src="images/survey/1.jpg" alt="survey">
-                      </div>
-                      <div class="item__btns">
-                        <button class="item__prev" disabled>Назад</button>
-                        <button class="item__next">Далее</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="survey__item item">
-                  <div class="item__top">
-                    <p class="survey__box-title">Где будут выполняться работы?</p>
-                    <p class="item__progress">Вопрос 2 из 5</p>
-                  </div>
-                  <div class="item__body">
-                    <div class="item__options">
-                      <label class="item__label">
-                        <span class="item__option-txt">В помещении </span>
-                        <input type="radio" class="item__radio-real" name="place">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                      <label class="item__label">
-                        <span class="item__option-txt">Фасад</span>
-                        <input type="radio" class="item__radio-real" name="place">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                    </div>
-                    <div class="item__visual">
-                      <div class="item__images">
-                        <img src="images/survey/2.jpg" alt="survey">
-                      </div>
-                      <div class="item__btns">
-                        <button class="item__prev">Назад</button>
-                        <button class="item__next">Далее</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="survey__item item">
-                  <div class="item__top">
-                    <p class="survey__box-title">Где будут выполняться работы?</p>
-                    <p class="item__progress">Вопрос 3 из 5</p>
-                  </div>
-                  <div class="item__body">
-                    <div class="item__options">
-                      <label class="item__label">
-                        <span class="item__option-txt">Менее 100 м2</span>
-                        <input type="radio" class="item__radio-real" name="square">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                      <label class="item__label">
-                        <span class="item__option-txt">Более 100 м2</span>
-                        <input type="radio" class="item__radio-real" name="square">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                      <label class="item__label">
-                        <input type="text" class="item__option-input" placeholder="Точная площадь">
-                        <input type="radio" class="item__radio-real" name="square">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                    </div>
-                    <div class="item__visual">
-                      <div class="item__images">
-                        <img src="images/survey/3.jpg" alt="survey">
-                      </div>
-                      <div class="item__btns">
-                        <button class="item__prev">Назад</button>
-                        <button class="item__next">Далее</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="survey__item item">
-                  <div class="item__top">
-                    <p class="survey__box-title">Уровень подготовки стен?</p>
-                    <p class="item__progress">Вопрос 4 из 5</p>
-                  </div>
-                  <div class="item__body">
-                    <div class="item__options">
-                      <label class="item__label">
-                        <span class="item__option-txt">Оштукатуренные стены </span>
-                        <input type="radio" class="item__radio-real" name="prepare">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                      <label class="item__label">
-                        <span class="item__option-txt">Ошпаклеванные стены</span>
-                        <input type="radio" class="item__radio-real" name="prepare">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                      <label class="item__label">
-                        <input type="text" class="item__option-input" placeholder="Другое">
-                        <input type="radio" class="item__radio-real" name="prepare">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                    </div>
-                    <div class="item__visual">
-                      <div class="item__images">
-                        <img src="images/survey/4.jpg" alt="survey">
-                      </div>
-                      <div class="item__btns">
-                        <button class="item__prev">Назад</button>
-                        <button class="item__next">Далее</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="survey__item item">
-                  <div class="item__top">
-                    <p class="survey__box-title">Где находится объект? </p>
-                    <p class="item__progress">Вопрос 5 из 5</p>
-                  </div>
-                  <div class="item__body">
-                    <div class="item__options">
-                      <label class="item__label">
-                        <span class="item__option-txt">Одесса </span>
-                        <input type="radio" class="item__radio-real" name="location">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                      <label class="item__label">
-                        <span class="item__option-txt">Пригород</span>
-                        <input type="radio" class="item__radio-real" name="location">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                    </div>
-                    <div class="item__visual">
-                      <div class="item__images">
-                        <img src="images/survey/5.jpg" alt="survey">
-                      </div>
-                      <div class="item__btns">
-                        <button class="item__prev">Назад</button>
-                        <button class="item__next">Далее</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="survey__item item">
-                  <div class="item__top">
-                    <p class="survey__box-title">Куда отправить результат?</p>
-                  </div>
-                  <div class="item__body">
-                    <div class="item__options">
-                      <div class="item__input-wrapper">
-                        <input type="text" class="item__option-input" placeholder="Имя">
-                      </div>
-                      <div class="item__input-wrapper">
-                        <input type="text" class="item__option-input" placeholder="Номер телефона">
-                      </div>
+        </div>
+      </section>
 
-                      <div class="item__labels">
+      <section class="portfolio section--decor" id="portfolio">
+        <div class="container">
+          <div class="portfolio__inner">
+            <h3 class="portfolio__title">Портфолио</h3>
+            <div class="portfolio__slider">
+              <div class="portfolio__slider-item">
+                <div class="portfolio__slider-box">
+                  <div class="portfolio__slider-images">
+                    <img src="images/portfolio/1.jpg" alt="cover">
+                  </div>
+                  <p class="portfolio__slider-name">Travertino FEIDAL</p>
+                  <p class="portfolio__slider-text">Матеріал дає можливість отримати ефект природного каменю травертину.</p>  
+                </div>
+              </div>
+              <div class="portfolio__slider-item">
+                <div class="portfolio__slider-box">
+                  <div class="portfolio__slider-images">
+                    <img src="images/portfolio/2.jpg" alt="cover">
+                  </div>
+                  <p class="portfolio__slider-name">Innenlatex Seidenmatt FEIDAL</p>
+                  <p class="portfolio__slider-text">Особливо стійка до миття та до дії миючих та дезінфікуючих засобів, має нейтральний запах.</p>  
+                </div>
+              </div>
+              <div class="portfolio__slider-item">
+                <div class="portfolio__slider-box">
+                  <div class="portfolio__slider-images">
+                    <img src="images/portfolio/1.jpg" alt="cover">
+                  </div>
+                  <p class="portfolio__slider-name">Travertino FEIDAL</p>
+                  <p class="portfolio__slider-text">Матеріал дає можливість отримати ефект природного каменю травертину.</p>  
+                </div>
+              </div>
+              <div class="portfolio__slider-item">
+                <div class="portfolio__slider-box">
+                  <div class="portfolio__slider-images">
+                    <img src="images/portfolio/2.jpg" alt="cover">
+                  </div>
+                  <p class="portfolio__slider-name">Innenlatex Seidenmatt FEIDAL</p>
+                  <p class="portfolio__slider-text">Особливо стійка до миття та до дії миючих та дезінфікуючих засобів, має нейтральний запах.</p>  
+                </div>
+              </div>
+              <div class="portfolio__slider-item">
+                <div class="portfolio__slider-box">
+                  <div class="portfolio__slider-images">
+                    <img src="images/portfolio/1.jpg" alt="cover">
+                  </div>
+                  <p class="portfolio__slider-name">Travertino FEIDAL</p>
+                  <p class="portfolio__slider-text">Матеріал дає можливість отримати ефект природного каменю травертину.</p>  
+                </div>
+              </div>
+              <div class="portfolio__slider-item">
+                <div class="portfolio__slider-box">
+                  <div class="portfolio__slider-images">
+                    <img src="images/portfolio/2.jpg" alt="cover">
+                  </div>
+                  <p class="portfolio__slider-name">Innenlatex Seidenmatt FEIDAL</p>
+                  <p class="portfolio__slider-text">Особливо стійка до миття та до дії миючих та дезінфікуючих засобів, має нейтральний запах.</p>  
+                </div>
+              </div>
+
+            </div>
+            <div class="portfolio__btn-wraper">
+              <button class="portfolio__btn btn" data-callback>Оставить заявку</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="survey">
+        <div class="survey__container">
+          <div class="survey__inner">
+            <div class="survey__box">
+              <p class="survey__box-title">Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив всего на 5 вопросов</p>
+            </div>
+            <div class="survey__box">
+              <form action="">
+                <div class="survey__items">
+                  <div class="survey__item item">
+                    <div class="item__top">
+                      <p class="survey__box-title">Какая услуга Вас интересует?</p>
+                      <p class="item__progress">Вопрос 1 из 5</p>
+                    </div>
+                    <div class="item__body">
+                      <div class="item__options">
                         <label class="item__label">
-                          <span class="item__option-txt item__option-txt--tg">Telegram </span>
-                          <input type="radio" class="item__radio-real" name="messenger">
+                          <span class="item__option-txt">Декоративная штукатурка</span>
+                          <input type="radio" class="item__radio-real" name="service">
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
-                          <span class="item__option-txt item__option-txt--viber">Viber</span>
-                          <input type="radio" class="item__radio-real" name="messenger">
+                          <span class="item__option-txt">Покраска</span>
+                          <input type="radio" class="item__radio-real" name="service">
                           <span class="item__radio-fake"></span>
-                        </label>  
+                        </label>
+                        <label class="item__label">
+                          <span class="item__option-txt">Декоративная штукатурка + покраска</span>
+                          <input type="radio" class="item__radio-real" name="service">
+                          <span class="item__radio-fake"></span>
+                        </label>
                       </div>
-
-                      <label class="item__label">
-                        <span class="item__option-txt item__option-txt--mail"></span>
-                        <input type="text" class="item__option-input" placeholder="Mail">
-                        <input type="radio" class="item__radio-real" name="prepare">
-                        <span class="item__radio-fake"></span>
-                      </label>
-                    </div>
-                    <div class="item__visual">
-                      <div class="item__images">
-                        <img src="images/survey/6.jpg" alt="survey">
-                      </div>
-                      <div class="item__btns">
-                        <button class="item__prev">Назад</button>
-                        <button class="item__next" type="submit">Отправить</button>
+                      <div class="item__visual">
+                        <div class="item__images">
+                          <img src="images/survey/1.jpg" alt="survey">
+                        </div>
+                        <div class="item__btns">
+                          <button class="item__prev" disabled>Назад</button>
+                          <button class="item__next">Далее</button>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div class="survey__item item">
+                    <div class="item__top">
+                      <p class="survey__box-title">Где будут выполняться работы?</p>
+                      <p class="item__progress">Вопрос 2 из 5</p>
+                    </div>
+                    <div class="item__body">
+                      <div class="item__options">
+                        <label class="item__label">
+                          <span class="item__option-txt">В помещении </span>
+                          <input type="radio" class="item__radio-real" name="place">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                        <label class="item__label">
+                          <span class="item__option-txt">Фасад</span>
+                          <input type="radio" class="item__radio-real" name="place">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                      </div>
+                      <div class="item__visual">
+                        <div class="item__images">
+                          <img src="images/survey/2.jpg" alt="survey">
+                        </div>
+                        <div class="item__btns">
+                          <button class="item__prev">Назад</button>
+                          <button class="item__next">Далее</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="survey__item item">
+                    <div class="item__top">
+                      <p class="survey__box-title">Где будут выполняться работы?</p>
+                      <p class="item__progress">Вопрос 3 из 5</p>
+                    </div>
+                    <div class="item__body">
+                      <div class="item__options">
+                        <label class="item__label">
+                          <span class="item__option-txt">Менее 100 м2</span>
+                          <input type="radio" class="item__radio-real" name="square">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                        <label class="item__label">
+                          <span class="item__option-txt">Более 100 м2</span>
+                          <input type="radio" class="item__radio-real" name="square">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                        <label class="item__label">
+                          <input type="text" class="item__option-input" placeholder="Точная площадь">
+                          <input type="radio" class="item__radio-real" name="square">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                      </div>
+                      <div class="item__visual">
+                        <div class="item__images">
+                          <img src="images/survey/3.jpg" alt="survey">
+                        </div>
+                        <div class="item__btns">
+                          <button class="item__prev">Назад</button>
+                          <button class="item__next">Далее</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="survey__item item">
+                    <div class="item__top">
+                      <p class="survey__box-title">Уровень подготовки стен?</p>
+                      <p class="item__progress">Вопрос 4 из 5</p>
+                    </div>
+                    <div class="item__body">
+                      <div class="item__options">
+                        <label class="item__label">
+                          <span class="item__option-txt">Оштукатуренные стены </span>
+                          <input type="radio" class="item__radio-real" name="prepare">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                        <label class="item__label">
+                          <span class="item__option-txt">Ошпаклеванные стены</span>
+                          <input type="radio" class="item__radio-real" name="prepare">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                        <label class="item__label">
+                          <input type="text" class="item__option-input" placeholder="Другое">
+                          <input type="radio" class="item__radio-real" name="prepare">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                      </div>
+                      <div class="item__visual">
+                        <div class="item__images">
+                          <img src="images/survey/4.jpg" alt="survey">
+                        </div>
+                        <div class="item__btns">
+                          <button class="item__prev">Назад</button>
+                          <button class="item__next">Далее</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="survey__item item">
+                    <div class="item__top">
+                      <p class="survey__box-title">Где находится объект? </p>
+                      <p class="item__progress">Вопрос 5 из 5</p>
+                    </div>
+                    <div class="item__body">
+                      <div class="item__options">
+                        <label class="item__label">
+                          <span class="item__option-txt">Одесса </span>
+                          <input type="radio" class="item__radio-real" name="location">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                        <label class="item__label">
+                          <span class="item__option-txt">Пригород</span>
+                          <input type="radio" class="item__radio-real" name="location">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                      </div>
+                      <div class="item__visual">
+                        <div class="item__images">
+                          <img src="images/survey/5.jpg" alt="survey">
+                        </div>
+                        <div class="item__btns">
+                          <button class="item__prev">Назад</button>
+                          <button class="item__next">Далее</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="survey__item item">
+                    <div class="item__top">
+                      <p class="survey__box-title">Куда отправить результат?</p>
+                    </div>
+                    <div class="item__body">
+                      <div class="item__options">
+                        <div class="item__input-wrapper">
+                          <input type="text" class="item__option-input" placeholder="Имя">
+                        </div>
+                        <div class="item__input-wrapper">
+                          <input type="text" class="item__option-input" placeholder="Номер телефона">
+                        </div>
+
+                        <div class="item__labels">
+                          <label class="item__label">
+                            <span class="item__option-txt item__option-txt--tg">Telegram </span>
+                            <input type="radio" class="item__radio-real" name="messenger">
+                            <span class="item__radio-fake"></span>
+                          </label>
+                          <label class="item__label">
+                            <span class="item__option-txt item__option-txt--viber">Viber</span>
+                            <input type="radio" class="item__radio-real" name="messenger">
+                            <span class="item__radio-fake"></span>
+                          </label>  
+                        </div>
+
+                        <label class="item__label">
+                          <span class="item__option-txt item__option-txt--mail"></span>
+                          <input type="text" class="item__option-input" placeholder="Mail">
+                          <input type="radio" class="item__radio-real" name="prepare">
+                          <span class="item__radio-fake"></span>
+                        </label>
+                      </div>
+                      <div class="item__visual">
+                        <div class="item__images">
+                          <img src="images/survey/6.jpg" alt="survey">
+                        </div>
+                        <div class="item__btns">
+                          <button class="item__prev">Назад</button>
+                          <button class="item__next" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="survey__item survey__item--result item">
+                    <p class="item__message">Спасибо, что выбрали нас!</p>
+                    <p class="item__message">Менеджер свяжется с Вами в ближайшее время.</p>
+                  </div>
                 </div>
-                <div class="survey__item survey__item--result item">
-                  <p class="item__message">Спасибо, что выбрали нас!</p>
-                  <p class="item__message">Менеджер свяжется с Вами в ближайшее время.</p>
-                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog section--decor" id="catalog">
+        <div class="container">
+          <div class="catalog__inner">
+            <h3 class="catalog__title">Каталог фактур</h3>
+            <div class="catalog__items">
+              <div class="catalog__item">
+                <a href="images/catalog/1.jpg" data-fancybox="images">
+                  <img src="images/catalog/1.jpg" alt="facture">
+                </a>
+                <p class="catalog__item-name">GROTTO</p>
               </div>
-            </form>
+              <div class="catalog__item">
+                <a href="images/catalog/2.jpg" data-fancybox="images">
+                  <img src="images/catalog/2.jpg" alt="facture">
+                </a>
+                <p class="catalog__item-name">MARMORINO</p>
+              </div>
+              <div class="catalog__item">
+                <a href="images/catalog/3.jpg" data-fancybox="images">
+                  <img src="images/catalog/3.jpg" alt="facture">
+                </a>
+                <p class="catalog__item-name">VENEZIANO</p>
+              </div>
+              <div class="catalog__item">
+                <a href="images/catalog/4.jpg" data-fancybox="images">
+                  <img src="images/catalog/4.jpg" alt="facture">
+                </a>
+                <p class="catalog__item-name">MAGIE</p>
+              </div>
+              <div class="catalog__item">
+                <a href="images/catalog/5.jpg" data-fancybox="images">
+                  <img src="images/catalog/5.jpg" alt="facture">
+                </a>
+                <p class="catalog__item-name">LAVA</p>
+              </div>
+              <div class="catalog__item">
+                <a href="images/catalog/6.jpg" data-fancybox="images">
+                  <img src="images/catalog/6.jpg" alt="facture">
+                </a>
+                <p class="catalog__item-name">Persia</p>
+              </div>
+              <div class="catalog__item">
+                <a href="images/catalog/7.jpg" data-fancybox="images">
+                  <img src="images/catalog/7.jpg" alt="facture">
+                </a>
+                <p class="catalog__item-name">SAHARA GOLD</p>
+              </div>
+              <div class="catalog__item">
+                <a href="images/catalog/8.jpg" data-fancybox="images">
+                  <img src="images/catalog/8.jpg" alt="facture">
+                </a>
+                <p class="catalog__item-name">TRAVERTINO</p>
+              </div>
+            </div>
+            <div class="catalog__btn-wraper">
+              <button class="catalog__btn btn">Показать больше</button>
+            </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="catalog catalog--decor">
-      <div class="container">
-        <div class="catalog__inner">
-          <h3 class="catalog__title">Каталог фактур</h3>
-          <div class="catalog__items">
-            <div class="catalog__item">
-              <img src="images/catalog/1.jpg" alt="facture">
-              <p class="catalog__item-name">GROTTO</p>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="reviews__title">Видеоотзывы</div>
+          <div class="reviews__slider">
+            <div class="reviews__item">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/1.jpg');">
+                <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
+                  <img src="images/play.svg" alt="video play">
+                </a>
+              </div>
+              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
+              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
-            <div class="catalog__item">
-              <img src="images/catalog/2.jpg" alt="facture">
-              <p class="catalog__item-name">MARMORINO</p>
+            <div class="reviews__item">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/2.jpg');">
+                <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
+                  <img src="images/play.svg" alt="video play">
+                </a>
+              </div>
+              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
+              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
-            <div class="catalog__item">
-              <img src="images/catalog/3.jpg" alt="facture">
-              <p class="catalog__item-name">VENEZIANO</p>
+            <div class="reviews__item">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/3.jpg');">
+                <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
+                  <img src="images/play.svg" alt="video play">
+                </a>
+              </div>
+              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
+              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
-            <div class="catalog__item">
-              <img src="images/catalog/4.jpg" alt="facture">
-              <p class="catalog__item-name">MAGIE</p>
+            <div class="reviews__item">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/4.jpg');">
+                <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
+                  <img src="images/play.svg" alt="video play">
+                </a>
+              </div>
+              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
+              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
-            <div class="catalog__item">
-              <img src="images/catalog/5.jpg" alt="facture">
-              <p class="catalog__item-name">LAVA</p>
+            <div class="reviews__item">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/1.jpg');">
+                <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
+                  <img src="images/play.svg" alt="video play">
+                </a>
+              </div>
+              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
+              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
-            <div class="catalog__item">
-              <img src="images/catalog/6.jpg" alt="facture">
-              <p class="catalog__item-name">Persia</p>
+            <div class="reviews__item">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/2.jpg');">
+                <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
+                  <img src="images/play.svg" alt="video play">
+                </a>
+              </div>
+              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
+              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
-            <div class="catalog__item">
-              <img src="images/catalog/7.jpg" alt="facture">
-              <p class="catalog__item-name">SAHARA GOLD</p>
-            </div>
-            <div class="catalog__item">
-              <img src="images/catalog/8.jpg" alt="facture">
-              <p class="catalog__item-name">TRAVERTINO</p>
-            </div>
-          </div>
-          <div class="catalog__btn-wraper">
-            <button class="catalog__btn btn">Показать больше</button>
+
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="reviews">
-      <div class="container">
-        <div class="reviews__title">Видеоотзывы</div>
-        <div class="reviews__slider">
-          <div class="reviews__item">
-            <div class="reviews__item-video video-item" style="background-image: url('images/reviews/1.jpg');">
-              <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
-                <img src="images/play.svg" alt="video play">
-              </a>
+      <section class="discuss section--decor" id="discuss">
+        <div class="container">
+          <div class="discuss__inner">
+            <div class="discuss__form">
+              <form id="discuss-form" action="">
+                <h3 class="discuss__title">Давайте обсудим ваш проект</h3>
+                <label class="discuss__label">
+                  <input type="text" class="discuss__input" name="name" placeholder="Имя" required>
+                </label>
+                <label class="discuss__label">
+                  <input type="text" class="discuss__input" name="phone" placeholder="Номер телефона" required>
+                </label>
+                <label class="discuss__label">
+                  <input type="text" class="discuss__input" placeholder="Комментарий">
+                </label>
+                <button class="discuss__submit btn" type="submit" data-form-submit>Заказать проект</button>
+              </form>
             </div>
-            <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-            <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
-          </div>
-          <div class="reviews__item">
-            <div class="reviews__item-video video-item" style="background-image: url('images/reviews/2.jpg');">
-              <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
-                <img src="images/play.svg" alt="video play">
-              </a>
+            <div class="discuss__images">
+              <img src="images/discuss-img.jpg" alt="designed room">
             </div>
-            <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-            <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
           </div>
-          <div class="reviews__item">
-            <div class="reviews__item-video video-item" style="background-image: url('images/reviews/3.jpg');">
-              <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
-                <img src="images/play.svg" alt="video play">
-              </a>
-            </div>
-            <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-            <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
-          </div>
-          <div class="reviews__item">
-            <div class="reviews__item-video video-item" style="background-image: url('images/reviews/4.jpg');">
-              <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
-                <img src="images/play.svg" alt="video play">
-              </a>
-            </div>
-            <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-            <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
-          </div>
-          <div class="reviews__item">
-            <div class="reviews__item-video video-item" style="background-image: url('images/reviews/1.jpg');">
-              <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
-                <img src="images/play.svg" alt="video play">
-              </a>
-            </div>
-            <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-            <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
-          </div>
-          <div class="reviews__item">
-            <div class="reviews__item-video video-item" style="background-image: url('images/reviews/2.jpg');">
-              <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
-                <img src="images/play.svg" alt="video play">
-              </a>
-            </div>
-            <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-            <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
-          </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+    </main>
 
-  @include('html-parts/footer.html')
+    @include('html-parts/footer.html')
   
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/bundle.js"></script>
 </body>
 
 </html>

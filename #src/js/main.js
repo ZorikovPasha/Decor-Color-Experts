@@ -1,10 +1,21 @@
+import sliders from './modules/sliders'
+import popups from './modules/popup'
+
+function makeInputChosen() {
+  if ( !$(this).hasClass('active') ) {
+    $(this).siblings().each(function(idx, label) {
+      $(label).removeClass('active')
+    })
+    $(this).addClass('active')
+  }
+}
+
 $(function() {
-  $('.item__label').on('click', function() {
-    if ( !$(this).hasClass('active') ) {
-      $(this).siblings().each(function(idx, label) {
-        $(label).removeClass('active')
-      })
-      $(this).addClass('active')
-    }
-  })
+
+  sliders()
+  popups()
+
+  $('[data-fancybox]').fancybox({});
+
+  $('.item__label').on('click', makeInputChosen)
 })

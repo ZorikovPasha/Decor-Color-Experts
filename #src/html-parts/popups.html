@@ -1,0 +1,36 @@
+<div class="popup" data-popup data-popup-form>
+  <div class="popup__body">
+      <button class="popup__close" data-close>
+        <img src="images/close.svg" alt="">
+      </button>
+      <h3 class="popup__title">Заказать обратный звонок</h3>
+      <p class="popup__text">Оставьте заявку на звонок и мы ответим на все ваши вопросы в самое ближайшее время</p>
+      <form class="popup__form" action="" id="popup-form">
+        <label class="popup__label">
+          <input class="popup__input" type="text" name="name" placeholder="Ваше имя*" required>
+        </label>
+        <label class="popup__label">
+          <input class="popup__input" type="tel" name="phone" placeholder="Ваш телефон*" required>
+        </label>
+        <div class="popup__line">
+          <label class="form-label">
+            <input class="form-label__checkbox-real" name="isAgree" type="checkbox" required>
+            <span class="form-label__checkbox-fake"></span>
+          </label>
+          <span class="form-label__text">Я согласен с <a href="#">условиями обработки</a> и использования моих персональных данных</span>  
+        </div>
+        <button class="popup__btn btn" type="submit" data-submit>Оставить заявку</button>
+      </form>
+  </div>
+</div>
+
+<div class="popup-message" data-popup data-popup-message>
+  <div class="popup__body">
+      <button class="popup-message__close popup__close" data-close>
+        <img src="images/close.svg" alt="close icon">
+      </button>
+      <h3 class="popup__title">Ваша заявка отправлена</h3>
+      <p class="popup__text">Мы позвоним вам в самое ближайшее время</p>
+      <button class="popup__btn btn" data-close>Вернуться</button>
+  </div>
+</div>
