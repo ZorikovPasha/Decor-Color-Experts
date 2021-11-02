@@ -34,4 +34,6 @@ $(function() {
   survey.displayCurrentQuestion()
   survey.blockSubmit()
   survey.submitForm()
+
+  new WOW().init();
 })
