@@ -121,6 +121,8 @@ input {
     height: 85px;
     margin: 0 auto;
     background-image: url('../images/decor.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 

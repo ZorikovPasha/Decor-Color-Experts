@@ -1,6 +1,8 @@
 import sliders from './modules/sliders'
 import popups from './modules/popup'
 import Survey from './modules/survey'
+import responsive from './modules/responsive'
+import toggleMobileMenu from './modules/toggle-mobile-menu'
 
 function makeInputChosen() {
   if ( !$(this).hasClass('active') ) {
@@ -15,6 +17,11 @@ $(function() {
 
   sliders()
   popups()
+  responsive();
+  $(window).resize(function(event) {
+    responsive()
+  })
+  toggleMobileMenu()
 
   $('[data-fancybox]').fancybox({});
   $('.item__label').on('click', makeInputChosen)

@@ -17,11 +17,21 @@
 
   <div class="wrapper">
   
-    @include('html-parts/header.html')
+     @include('html-parts/header.html')
 
     @include('html-parts/popups.html')
 
     <main class="main">
+
+      <div class="mob-menu">
+        <div class="mob-menu__body">
+          <button class="mob-menu__close">
+            <span></span>
+            <span></span>
+          </button>
+
+        </div>
+      </div>
       <section class="top" id="top">
         <div class="container">
           <div class="top__inner">
@@ -31,13 +41,12 @@
                 <p class="top__promo-text">Наши клиенты получают скидку 10% на материалы</p>
                 </div>
             </div>
-            <div>
+            <div class="top__btn-wrap">
               <button class="top__btn btn" data-callback>Заказать проект</button>
             </div>
           </div>
         </div>
       </section>
-
       <section class="about section--decor">
         <div class="about__container">
           <div class="about__inner">
@@ -431,7 +440,7 @@
           <div class="reviews__title">Видеоотзывы</div>
           <div class="reviews__slider">
             <div class="reviews__item">
-              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/1.jpg');">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/1.png');">
                 <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
                   <img src="images/play.svg" alt="video play">
                 </a>
@@ -440,7 +449,7 @@
               <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/2.jpg');">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/2.png');">
                 <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
                   <img src="images/play.svg" alt="video play">
                 </a>
@@ -449,7 +458,7 @@
               <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/3.jpg');">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/3.png');">
                 <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
                   <img src="images/play.svg" alt="video play">
                 </a>
@@ -458,7 +467,7 @@
               <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/4.jpg');">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/4.png');">
                 <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
                   <img src="images/play.svg" alt="video play">
                 </a>
@@ -467,7 +476,7 @@
               <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/1.jpg');">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/1.png');">
                 <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
                   <img src="images/play.svg" alt="video play">
                 </a>
@@ -476,7 +485,7 @@
               <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/2.jpg');">
+              <div class="reviews__item-video video-item" style="background-image: url('images/reviews/2.png');">
                 <a class="video-item__play" data-fancybox href="https://youtu.be/Mfpo9TRZDwA">
                   <img src="images/play.svg" alt="video play">
                 </a>

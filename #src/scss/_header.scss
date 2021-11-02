@@ -48,6 +48,8 @@
 
 .menu {
 
+  padding: 0 15px;
+
   // .menu__list
 
   &__list {
@@ -69,3 +71,30 @@
   &__list-link {
   }
 }
+
+.menu-btn {
+  display: none;
+  cursor: pointer;
+
+  & div {
+    width: 34px;
+    height: 2px;
+    background-color: #fff;
+    transition: all .5s;
+  }
+  div + div{
+    margin-top: 5px;
+  }
+}
+
+  .menu-btn.active {
+    div:nth-child(2) {
+      opacity: 0;
+    }
+    div:nth-child(1) {
+      transform: translateY(5px) rotate(135deg);
+    }
+    div:nth-child(3) {
+      transform: translateY(-9px) rotate(-135deg);
+    }
+}  
