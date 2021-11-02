@@ -1,0 +1,38 @@
+.portfolio__slider {
+  .slick-btn {
+    position: absolute;
+    top: -66px;
+    z-index: 4;
+    transform: translate(0px, -50%);
+    cursor: pointer;
+
+    &.slick-disabled {
+      opacity: .5;
+    }
+  }
+  .slick-prev {
+    right: 150px;
+  }
+  .slick-next {
+    right: 95px;
+  }
+}
+
+.reviews__slider {
+  .slick-btn {
+    position: absolute;
+    top: -112px;
+    z-index: 4;
+    cursor: pointer;
+
+    &.slick-disabled {
+      opacity: .5;
+    }
+  }
+  .slick-prev {
+    right: 150px;
+  }
+  .slick-next {
+    right: 95px;
+  }
+}
