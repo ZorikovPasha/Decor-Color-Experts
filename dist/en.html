@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -26,25 +30,25 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#top">Главная</a>
+            <a class="menu__list-link" href="#top">Home</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#portfolio">Портфолио </a>
+            <a class="menu__list-link" href="#portfolio">Portfolio </a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#catalog">Каталог</a>
+            <a class="menu__list-link" href="#catalog">Catalogue</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#reviews">Блог </a>
+            <a class="menu__list-link" href="#reviews">Blog </a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#discuss">Контакты</a>
+            <a class="menu__list-link" href="#discuss">Contact</a>
           </li>
         </ul>
       </nav>
       <div class="header__links">
-        <a class="header__phone" href="tel:+74951785717 ">+7 495 178 57 17 </a>
-        <a class="header__callback" href="#" data-callback>Обратный звонок</a>  
+        <a class="header__phone" href="tel:+14242706341 ">+14242706341</a>
+        <a class="header__callback" href="#" data-callback>Call back</a>  
       </div>
       <div class="menu-btn">
         <div></div>
@@ -62,23 +66,23 @@
       <button class="popup__close" data-close>
         <img src="images/close.svg" alt="">
       </button>
-      <h3 class="popup__title">Заказать обратный звонок</h3>
-      <p class="popup__text">Оставьте заявку на звонок и мы ответим на все ваши вопросы в самое ближайшее время</p>
-      <form class="popup__form" action="" id="popup-form">
+      <h3 class="popup__title">Request a call back</h3>
+      <p class="popup__text">Leave a request for a call and we will answer all your questions as soon as possible</p>
+      <form class="popup__form" id="popup-form">
         <label class="popup__label">
-          <input class="popup__input" type="text" name="name" placeholder="Ваше имя*" required>
+          <input class="popup__input" type="text" name="name" placeholder="Your name*" required>
         </label>
         <label class="popup__label">
-          <input class="popup__input" type="tel" name="phone" placeholder="Ваш телефон*" required>
+          <input class="popup__input" type="tel" name="phone" placeholder="Your phone*" required>
         </label>
         <div class="popup__line">
           <label class="form-label">
             <input class="form-label__checkbox-real" name="isAgree" type="checkbox" required>
             <span class="form-label__checkbox-fake"></span>
           </label>
-          <span class="form-label__text">Я согласен с <a href="#">условиями обработки</a> и использования моих персональных данных</span>  
+          <span class="form-label__text">I agree with <a href="#">conditions</a> and use of my personal data</span>  
         </div>
-        <button class="popup__btn btn" type="submit" data-submit>Оставить заявку</button>
+        <button class="popup__btn btn" type="submit" data-submit>Submit request</button>
       </form>
   </div>
 </div>
@@ -88,34 +92,32 @@
       <button class="popup-message__close popup__close" data-close>
         <img src="images/close.svg" alt="close icon">
       </button>
-      <h3 class="popup__title">Ваша заявка отправлена</h3>
-      <p class="popup__text">Мы позвоним вам в самое ближайшее время</p>
-      <button class="popup__btn btn" data-close>Вернуться</button>
+      <h3 class="popup__title">Your request has been sent</h3>
+      <p class="popup__text">We will call you as soon as possible</p>
+      <button class="popup__btn btn" data-close>Go back</button>
   </div>
 </div>
 
     <main class="main">
-
       <div class="mob-menu">
         <div class="mob-menu__body">
           <button class="mob-menu__close">
             <span></span>
             <span></span>
           </button>
-
         </div>
       </div>
       <section class="top" id="top">
         <div class="container">
           <div class="top__inner">
             <div class="top__text">
-              <h1 class="top__title wow animate__animated animate__fadeIn" data-wow-delay="0.7s">Нанесение декоративных штукатурок премиум сегмента в современном стиле </h1>
+              <h1 class="top__title wow animate__animated animate__fadeIn" data-wow-delay="0.7s">Application of premium decorative plasters in a modern style</h1>
               <div class="top__promo wow animate__animated animate__fadeIn" data-wow-delay="1.1s">
-                <p class="top__promo-text" >Наши клиенты получают скидку 10% на материалы</p>
+                <p class="top__promo-text">Our customers receive a 10% discount on materials</p>
                 </div>
             </div>
             <div class="top__btn-wrap">
-              <button class="top__btn btn wow animate__animated animate__fadeIn" data-callback data-wow-delay="1.5s">Заказать проект</button>
+              <button class="top__btn btn wow animate__animated animate__fadeIn" data-callback data-wow-delay="1.5s">Request project</button>
             </div>
           </div>
         </div>
@@ -124,15 +126,12 @@
         <div class="about__container">
           <div class="about__inner">
             <div class="about__text wow animate__animated animate__fadeInLeft" data-wow-delay="0.7s">
-              <h3 class="about__title title">О нас</h3>
-              <p class="about__par">
-                Мы хотим что бы наши проекты соответствовали нашим высоким требованиям и желаниям заказчика, были актуальными и уникальными.
-              </p>
+              <h3 class="about__title title">About Us</h3>
+              <p class="about__par">We want our projects to meet our high requirements and desires of the customer, to be relevant and unique.</p>
               <p class="about__par">
                 
                 <span>Décor color expert</span>
-                  - это команда профессионалов, которые воплощают в реальность самые сложные пожелания заказчика. Мы не просто делаем штукатурные работы и предоставляем услуги по окрашиванию стен, а создаем искусство, которое долгие годы будет радовать Ваш глаз и сохранит первоклассное качество.
-              </p>
+                is a team of professionals who embody the most complex wishes of the customer into reality. We do not just do plaster work and provide wall painting services, but we create art that will delight your eye for many years and retain high quality.              </p>
             </div>
             <div class="about__images wow animate__animated animate__fadeInRight" data-wow-delay="1.1s">
               <img src="images/about-img.jpg" alt="bathroom">
@@ -144,27 +143,28 @@
       <section class="why">
         <div class="container">
           <div class="why__inner">
-            <h3 class="why__title">Почему мы?</h3>
+            <h3 class="why__title">Why Us?</h3>
             <div class="why__items">
               <div class="why__item">
                 <img src="images/why/1.svg" alt="checkmark">
-                <h6 class="why__item-title">Первоклассное качество </h6>
-                <p class="why__item-text">Высокое качество исполнения реализованных проектов и благодарные отзывы счастливых клиентов позволяют утверждать что декорирование стен – наше призвание.</p>
+                <h6 class="why__item-title">High quality</h6>
+                <p class="why__item-text">The high quality of the completed projects and the grateful reviews of happy customers allow us to assert that wall decoration is our calling.</p>
               </div>
               <div class="why__item">
                 <img src="images/why/2.svg" alt="globe">
-                <h6 class="why__item-title">Материалы лучших брендов</h6>
-                <p class="why__item-text">Подбор материалов берем на себя. Работаем с такими Торговыми Марками как Feidal, Spiver, Oikos, elf decor, San Marco</p>
+                <h6 class="why__item-title">Top brand materials</h6>
+                <p class="why__item-text">We take care of the selection of materials. We work with brands such as Feidal, Spiver, Oikos, elf decor, San Marco</p>
               </div>
               <div class="why__item">
                 <img src="images/why/3.svg" alt="car">
-                <h6 class="why__item-title">Скорость выполнения работ</h6>
-                <p class="why__item-text">Приступаем к выполнению работ по Вашему заказку сразу после выезда специалиста на осмотр объекта. Результат от 3-х рабочих дней.</p>
+                <h6 class="why__item-title">
+                  Work execution speed</h6>
+                <p class="why__item-text">We start working on your order immediately after the departure of a specialist to inspect the object.</p>
               </div>
               <div class="why__item">
                 <img src="images/why/4.svg" alt="infinity">
-                <h6 class="why__item-title">Бесконечный творческий потенциал </h6>
-                <p class="why__item-text">Наша команда - это не только крутые специалисты, но и креативные творческие люди, которые знают как воплотить в жизнь Ваши идеи</p>
+                <h6 class="why__item-title">Endless creative potential </h6>
+                <p class="why__item-text">Our team is not only cool specialists, but also creative creative people who know how to bring your ideas to life.</p>
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@
       <section class="portfolio section--decor" id="portfolio">
         <div class="container">
           <div class="portfolio__inner">
-            <h3 class="portfolio__title">Портфолио</h3>
+            <h3 class="portfolio__title">Portfolio</h3>
             <div class="portfolio__slider">
               <div class="portfolio__slider-item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
                 <div class="portfolio__slider-box">
@@ -182,7 +182,6 @@
                     <img src="images/portfolio/1.jpg" alt="cover">
                   </div>
                   <p class="portfolio__slider-name">Travertino FEIDAL</p>
-                  <p class="portfolio__slider-text">Матеріал дає можливість отримати ефект природного каменю травертину.</p>  
                 </div>
               </div>
               <div class="portfolio__slider-item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
@@ -191,7 +190,6 @@
                     <img src="images/portfolio/2.jpg" alt="cover">
                   </div>
                   <p class="portfolio__slider-name">Innenlatex Seidenmatt FEIDAL</p>
-                  <p class="portfolio__slider-text">Особливо стійка до миття та до дії миючих та дезінфікуючих засобів, має нейтральний запах.</p>  
                 </div>
               </div>
               <div class="portfolio__slider-item">
@@ -200,7 +198,6 @@
                     <img src="images/portfolio/1.jpg" alt="cover">
                   </div>
                   <p class="portfolio__slider-name">Travertino FEIDAL</p>
-                  <p class="portfolio__slider-text">Матеріал дає можливість отримати ефект природного каменю травертину.</p>  
                 </div>
               </div>
               <div class="portfolio__slider-item">
@@ -209,7 +206,6 @@
                     <img src="images/portfolio/2.jpg" alt="cover">
                   </div>
                   <p class="portfolio__slider-name">Innenlatex Seidenmatt FEIDAL</p>
-                  <p class="portfolio__slider-text">Особливо стійка до миття та до дії миючих та дезінфікуючих засобів, має нейтральний запах.</p>  
                 </div>
               </div>
               <div class="portfolio__slider-item">
@@ -218,7 +214,6 @@
                     <img src="images/portfolio/1.jpg" alt="cover">
                   </div>
                   <p class="portfolio__slider-name">Travertino FEIDAL</p>
-                  <p class="portfolio__slider-text">Матеріал дає можливість отримати ефект природного каменю травертину.</p>  
                 </div>
               </div>
               <div class="portfolio__slider-item">
@@ -227,13 +222,12 @@
                     <img src="images/portfolio/2.jpg" alt="cover">
                   </div>
                   <p class="portfolio__slider-name">Innenlatex Seidenmatt FEIDAL</p>
-                  <p class="portfolio__slider-text">Особливо стійка до миття та до дії миючих та дезінфікуючих засобів, має нейтральний запах.</p>  
                 </div>
               </div>
 
             </div>
             <div class="portfolio__btn-wraper">
-              <button class="portfolio__btn btn" data-callback>Оставить заявку</button>
+              <button class="portfolio__btn btn" data-callback>Leave request</button>
             </div>
           </div>
         </div>
@@ -243,30 +237,30 @@
         <div class="survey__container">
           <div class="survey__inner">
             <div class="survey__box">
-              <p class="survey__box-title">Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив всего на 5 вопросов</p>
+              <p class="survey__box-title">Calculate the estimated cost of your work by answering just 5 questions</p>
             </div>
             <div class="survey__box">
               <form action="" data-survey-form>
                 <div class="survey__items">
                   <div class="survey__item item" data-survey-item>
                     <div class="item__top">
-                      <p class="survey__box-title">Какая услуга Вас интересует?</p>
-                      <p class="item__progress">Вопрос 1 из 5</p>
+                      <p class="survey__box-title">What service are youp interested in?</p>
+                      <p class="item__progress">Question 1/5</p>
                     </div>
                     <div class="item__body">
                       <div class="item__options">
                         <label class="item__label">
-                          <span class="item__option-txt">Декоративная штукатурка</span>
+                          <span class="item__option-txt">Decorative plaster</span>
                           <input type="radio" class="item__radio-real" name="service" value="stukaturka" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
-                          <span class="item__option-txt">Покраска</span>
+                          <span class="item__option-txt">Painting</span>
                           <input type="radio" class="item__radio-real" name="service" value="paint" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
-                          <span class="item__option-txt">Декоративная штукатурка + покраска</span>
+                          <span class="item__option-txt">Decorative plaster + Painting</span>
                           <input type="radio" class="item__radio-real" name="service" value="both" required>
                           <span class="item__radio-fake"></span>
                         </label>
@@ -276,26 +270,26 @@
                           <img src="images/survey/1.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev" data-prev disabled>Назад</button>
-                          <button class="item__next" data-next>Далее</button>
+                          <button class="item__prev" data-prev disabled>Prev</button>
+                          <button class="item__next" data-next>Next</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="survey__item item" data-survey-item>
                     <div class="item__top">
-                      <p class="survey__box-title">Где будут выполняться работы?</p>
-                      <p class="item__progress">Вопрос 2 из 5</p>
+                      <p class="survey__box-title">Where will the work be done?</p>
+                      <p class="item__progress">Question 2/5</p>
                     </div>
                     <div class="item__body">
                       <div class="item__options">
                         <label class="item__label">
-                          <span class="item__option-txt">В помещении </span>
+                          <span class="item__option-txt">Inside</span>
                           <input type="radio" class="item__radio-real" name="place" value="inside" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
-                          <span class="item__option-txt">Фасад</span>
+                          <span class="item__option-txt">Facade</span>
                           <input type="radio" class="item__radio-real" name="place" value="facade" required>
                           <span class="item__radio-fake"></span>
                         </label>
@@ -305,26 +299,26 @@
                           <img src="images/survey/2.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev" data-prev>Назад</button>
-                          <button class="item__next" data-next>Далее</button>
+                          <button class="item__prev" data-prev>Back</button>
+                          <button class="item__next" data-next>Next</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="survey__item item" data-survey-item>
                     <div class="item__top">
-                      <p class="survey__box-title">Где будут выполняться работы?</p>
-                      <p class="item__progress">Вопрос 3 из 5</p>
+                      <p class="survey__box-title">Please, specify the square footage of your home.</p>
+                      <p class="item__progress">Question 3/5</p>
                     </div>
                     <div class="item__body">
                       <div class="item__options">
                         <label class="item__label">
-                          <span class="item__option-txt">Менее 100 м2</span>
+                          <span class="item__option-txt">Less than 100 м2</span>
                           <input type="radio" class="item__radio-real" name="square" value="less" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
-                          <span class="item__option-txt">Более 100 м2</span>
+                          <span class="item__option-txt">Greater than 100 м2</span>
                           <input type="radio" class="item__radio-real" name="square" value="more" required>
                           <span class="item__radio-fake"></span>
                         </label>
@@ -334,26 +328,26 @@
                           <img src="images/survey/3.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev" data-prev>Назад</button>
-                          <button class="item__next" data-next>Далее</button>
+                          <button class="item__prev" data-prev>Back</button>
+                          <button class="item__next" data-next>Next</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="survey__item item" data-survey-item>
                     <div class="item__top">
-                      <p class="survey__box-title">Уровень подготовки стен?</p>
-                      <p class="item__progress">Вопрос 4 из 5</p>
+                      <p class="survey__box-title">Walls quality.</p>
+                      <p class="item__progress">Question 4/5</p>
                     </div>
                     <div class="item__body">
                       <div class="item__options">
                         <label class="item__label">
-                          <span class="item__option-txt">Оштукатуренные стены </span>
+                          <span class="item__option-txt">plastered walls </span>
                           <input type="radio" class="item__radio-real" name="prepare" value="shtukaturka" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
-                          <span class="item__option-txt">Ошпаклеванные стены</span>
+                          <span class="item__option-txt">Puttyed walls</span>
                           <input type="radio" class="item__radio-real" name="prepare" value="shpaklevka" required>
                           <span class="item__radio-fake"></span>
                         </label>
@@ -363,26 +357,26 @@
                           <img src="images/survey/4.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev" data-prev>Назад</button>
-                          <button class="item__next" data-next>Далее</button>
+                          <button class="item__prev" data-prev>Back</button>
+                          <button class="item__next" data-next>Next</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="survey__item item" data-survey-item>
                     <div class="item__top">
-                      <p class="survey__box-title">Где находится объект? </p>
-                      <p class="item__progress">Вопрос 5 из 5</p>
+                      <p class="survey__box-title">Where the object is situated? </p>
+                      <p class="item__progress">Question 5/5</p>
                     </div>
                     <div class="item__body">
                       <div class="item__options">
                         <label class="item__label">
-                          <span class="item__option-txt">Одесса </span>
+                          <span class="item__option-txt">LA </span>
                           <input type="radio" class="item__radio-real" name="location" value="Odessa" required>
                           <span class="item__radio-fake"></span>
                         </label>
                         <label class="item__label">
-                          <span class="item__option-txt">Пригород</span>
+                          <span class="item__option-txt">Other city</span>
                           <input type="radio" class="item__radio-real" name="location" value="suburban" required>
                           <span class="item__radio-fake"></span>
                         </label>
@@ -392,23 +386,23 @@
                           <img src="images/survey/5.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev" data-prev>Назад</button>
-                          <button class="item__next" data-next>Далее</button>
+                          <button class="item__prev" data-prev>Back</button>
+                          <button class="item__next" data-next>Next</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="survey__item item" data-survey-item>
                     <div class="item__top">
-                      <p class="survey__box-title">Куда отправить результат?</p>
+                      <p class="survey__box-title">Please, specify where to send the results?</p>
                     </div>
                     <div class="item__body">
                       <div class="item__options">
                         <div class="item__input-wrapper">
-                          <input type="text" class="item__option-input" name="name" placeholder="Имя" required>
+                          <input type="text" class="item__option-input" name="name" placeholder="Name" required>
                         </div>
                         <div class="item__input-wrapper">
-                          <input type="text" class="item__option-input" name="phone" placeholder="Номер телефона" required>
+                          <input type="text" class="item__option-input" name="phone" placeholder="Phone" required>
                         </div>
 
                         <div class="item__labels">
@@ -429,15 +423,15 @@
                           <img src="images/survey/6.png" alt="survey">
                         </div>
                         <div class="item__btns">
-                          <button class="item__prev" data-prev>Назад</button>
-                          <button class="item__next" type="submit" data-next data-survey-submit>Отправить</button>
+                          <button class="item__prev" data-prev>Back</button>
+                          <button class="item__next" type="submit" data-next data-survey-submit>Send</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="survey__item survey__item--result item" data-survey-item>
-                    <p class="item__message">Спасибо, что выбрали нас!</p>
-                    <p class="item__message">Менеджер свяжется с Вами в ближайшее время.</p>
+                    <p class="item__message">Thank you for choosing us!</p>
+                    <p class="item__message">Our manager will contact you as soon as possible.</p>
                   </div>
                 </div>
               </form>
@@ -450,51 +444,51 @@
       <section class="catalog section--decor" id="catalog">
         <div class="container">
           <div class="catalog__inner">
-            <h3 class="catalog__title">Каталог фактур</h3>
+            <h3 class="catalog__title">Catalogue</h3>
             <div class="catalog__items">
-              <div class="catalog__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
+              <div class="catalog__item">
                 <a href="images/catalog/1.jpg" data-fancybox="images">
                   <img src="images/catalog/1.jpg" alt="facture">
                 </a>
                 <p class="catalog__item-name">GROTTO</p>
               </div>
-              <div class="catalog__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
+              <div class="catalog__item">
                 <a href="images/catalog/2.jpg" data-fancybox="images">
                   <img src="images/catalog/2.jpg" alt="facture">
                 </a>
                 <p class="catalog__item-name">MARMORINO</p>
               </div>
-              <div class="catalog__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
+              <div class="catalog__item">
                 <a href="images/catalog/3.jpg" data-fancybox="images">
                   <img src="images/catalog/3.jpg" alt="facture">
                 </a>
                 <p class="catalog__item-name">VENEZIANO</p>
               </div>
-              <div class="catalog__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
+              <div class="catalog__item">
                 <a href="images/catalog/4.jpg" data-fancybox="images">
                   <img src="images/catalog/4.jpg" alt="facture">
                 </a>
                 <p class="catalog__item-name">MAGIE</p>
               </div>
-              <div class="catalog__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
+              <div class="catalog__item">
                 <a href="images/catalog/5.jpg" data-fancybox="images">
                   <img src="images/catalog/5.jpg" alt="facture">
                 </a>
                 <p class="catalog__item-name">LAVA</p>
               </div>
-              <div class="catalog__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
+              <div class="catalog__item">
                 <a href="images/catalog/6.jpg" data-fancybox="images">
                   <img src="images/catalog/6.jpg" alt="facture">
                 </a>
                 <p class="catalog__item-name">Persia</p>
               </div>
-              <div class="catalog__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
+              <div class="catalog__item">
                 <a href="images/catalog/7.jpg" data-fancybox="images">
                   <img src="images/catalog/7.jpg" alt="facture">
                 </a>
                 <p class="catalog__item-name">SAHARA GOLD</p>
               </div>
-              <div class="catalog__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
+              <div class="catalog__item">
                 <a href="images/catalog/8.jpg" data-fancybox="images">
                   <img src="images/catalog/8.jpg" alt="facture">
                 </a>
@@ -502,7 +496,7 @@
               </div>
             </div>
             <div class="catalog__btn-wraper">
-              <button class="catalog__btn btn">Показать больше</button>
+              <button class="catalog__btn btn" data-show-more>Show more</button>
             </div>
           </div>
         </div>
@@ -510,7 +504,7 @@
 
       <section class="reviews" id="reviews">
         <div class="container">
-          <div class="reviews__title">Видеоотзывы</div>
+          <div class="reviews__title">Reviews</div>
           <div class="reviews__slider">
             <div class="reviews__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
               <div class="reviews__item-video video-item" style="background-image: url('images/reviews/1.png');">
@@ -518,8 +512,8 @@
                   <img src="images/play.svg" alt="video play">
                 </a>
               </div>
-              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
+              <p class="reviews__item-name">Plastering work in the bathroom</p>
+              <p class="reviews__item-text">Plastering works were carried out taking into account the wishes of the customer. High quality materials were used in the work.</p>
             </div>
             <div class="reviews__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
               <div class="reviews__item-video video-item" style="background-image: url('images/reviews/2.png');">
@@ -527,8 +521,8 @@
                   <img src="images/play.svg" alt="video play">
                 </a>
               </div>
-              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
+              <p class="reviews__item-name">Plastering work in the bathroom</p>
+              <p class="reviews__item-text">Plastering works were carried out taking into account the wishes of the customer. High quality materials were used in the work.</p>
             </div>
             <div class="reviews__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
               <div class="reviews__item-video video-item" style="background-image: url('images/reviews/3.png');">
@@ -536,8 +530,8 @@
                   <img src="images/play.svg" alt="video play">
                 </a>
               </div>
-              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
+              <p class="reviews__item-name">Plastering work in the bathroom</p>
+              <p class="reviews__item-text">Plastering works were carried out taking into account the wishes of the customer. High quality materials were used in the work.</p>
             </div>
             <div class="reviews__item wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
               <div class="reviews__item-video video-item" style="background-image: url('images/reviews/4.png');">
@@ -545,8 +539,8 @@
                   <img src="images/play.svg" alt="video play">
                 </a>
               </div>
-              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
+              <p class="reviews__item-name">Plastering work in the bathroom</p>
+              <p class="reviews__item-text">Plastering works were carried out taking into account the wishes of the customer. High quality materials were used in the work.</p>
             </div>
             <div class="reviews__item">
               <div class="reviews__item-video video-item" style="background-image: url('images/reviews/1.png');">
@@ -554,8 +548,8 @@
                   <img src="images/play.svg" alt="video play">
                 </a>
               </div>
-              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
+              <p class="reviews__item-name">Plastering work in the bathroom</p>
+              <p class="reviews__item-text">Plastering works were carried out taking into account the wishes of the customer. High quality materials were used in the work.</p>
             </div>
             <div class="reviews__item">
               <div class="reviews__item-video video-item" style="background-image: url('images/reviews/2.png');">
@@ -563,8 +557,8 @@
                   <img src="images/play.svg" alt="video play">
                 </a>
               </div>
-              <p class="reviews__item-name">Выполнение штукатурных работ в ванной комнате</p>
-              <p class="reviews__item-text">Были выполнены штукатурные работы с учетом пожеланий заказчика. В работе были использованы материалы высокого качества.</p>
+              <p class="reviews__item-name">Plastering work in the bathroom</p>
+              <p class="reviews__item-text">Plastering works were carried out taking into account the wishes of the customer. High quality materials were used in the work.</p>
             </div>
 
           </div>
@@ -576,17 +570,17 @@
           <div class="discuss__inner">
             <div class="discuss__form wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
               <form id="discuss-form" action="">
-                <h3 class="discuss__title">Давайте обсудим ваш проект</h3>
+                <h3 class="discuss__title">Let's discuss your project</h3>
                 <label class="discuss__label">
-                  <input type="text" class="discuss__input" name="name" placeholder="Имя" required>
+                  <input type="text" class="discuss__input" name="name" placeholder="Name" required>
                 </label>
                 <label class="discuss__label">
-                  <input type="text" class="discuss__input" name="phone" placeholder="Номер телефона" required>
+                  <input type="text" class="discuss__input" name="phone" placeholder="Phone" required>
                 </label>
                 <label class="discuss__label">
-                  <input type="text" class="discuss__input" placeholder="Комментарий">
+                  <input type="text" class="discuss__input" placeholder="Additional info">
                 </label>
-                <button class="discuss__submit btn" type="submit" data-form-submit>Заказать проект</button>
+                <button class="discuss__submit btn" type="submit" data-form-submit>Request project</button>
               </form>
             </div>
             <div class="discuss__images wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
@@ -599,38 +593,44 @@
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <div class="footer__inner">
-
-      <div class="footer__column footer__column--left">
-        <h3 class="footer__title">Контакты</h3>
-        <p class="footer__text">Мы в соц. сетях</p>
-        <div class="footer__socials">
-          <a class="footer__socials-link" href="#">
-            <img src="images/socials/fb.svg" alt="facebook">
-          </a>
-          <a class="footer__socials-link" href="#">
-            <img src="images/socials/tg.svg" alt="telegram">
-          </a>
-          <a class="footer__socials-link" href="#">
-            <img src="images/socials/inst.svg" alt="instagram">
-          </a>
-          <a class="footer__socials-link" href="#">
-            <img src="images/socials/viber.svg" alt="viber">
-          </a>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__column footer__column--left">
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__text">Socials</p>
+            <div class="footer__socials">
+              <a class="footer__socials-link" href="#">
+                <img src="images/socials/fb.svg" alt="facebook">
+              </a>
+              <a class="footer__socials-link" href="#">
+                <img src="images/socials/tg.svg" alt="telegram">
+              </a>
+              <a class="footer__socials-link" href="#">
+                <img src="images/socials/inst.svg" alt="instagram">
+              </a>
+              <a class="footer__socials-link" href="#">
+                <img src="images/socials/viber.svg" alt="viber">
+              </a>
+            </div>
+          </div>
+          <div class="footer__column footer__column--right">
+            <p class="footer__text">General contacts</p>
+            <a class="footer__link" href="mailto:example@gmail.com">example@gmail.com</a>
+            <a class="footer__link" href="tel:+14242706341">+14242706341</a>
+          </div>
+          <div class="map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1246.6628451507263!2d37.1415273459582!3d55.982877074558544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5156fd10207af%3A0xe80474dd208eaad6!2z0J_QtdGA0LLQvtC80LDQudGB0LrQsNGPINGD0LvQuNGG0LAsIDE1LCDQodC70LDQstGP0L3RgdC6LdC90LAt0JrRg9Cx0LDQvdC4LCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzUzNTY0!5e0!3m2!1sru!2sru!4v1635624092604!5m2!1sru!2sru" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
         </div>
       </div>
-      <div class="footer__column footer__column--right">
-        <p class="footer__text">General contacts</p>
-        <a class="footer__link" href="mailto:example@gmail.com">example@gmail.com</a>
-        <a class="footer__link" href="tel:+74951785717">+7 495 178 57 17</a>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1246.6628451507263!2d37.1415273459582!3d55.982877074558544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5156fd10207af%3A0xe80474dd208eaad6!2z0J_QtdGA0LLQvtC80LDQudGB0LrQsNGPINGD0LvQuNGG0LAsIDE1LCDQodC70LDQstGP0L3RgdC6LdC90LAt0JrRg9Cx0LDQvdC4LCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzUzNTY0!5e0!3m2!1sru!2sru!4v1635624092604!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
   
   </div>
 

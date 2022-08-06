@@ -75,13 +75,15 @@ input {
   border-radius: 10px;
   transition: all .2s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: linear-gradient(90deg, #6488D4 0%, #193F50 100%);
   }
 
   &:active {
     background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
   }
+
   &:active::after {
     content: '';
     position: absolute;
@@ -98,7 +100,8 @@ input {
   opacity: 1;
   transition: opacity .2s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: .7;
   }
 
@@ -132,5 +135,4 @@ input {
   font-size: 24px;
   line-height: 130%;
   color: #FFFFFF;
-
 }

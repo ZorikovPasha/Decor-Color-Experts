@@ -4,11 +4,11 @@ jQuery.validator.addMethod(
   function (value, element) {
     return this.optional(element) || /^[0-9-()+]{11,30}/.test(value);
   },
-  "Пожалуйста, введите правильный номер телефона"
+  "Please, enter the correct phone number"
 );
 
 jQuery.validator.addMethod("isName", function (value, element) {
-  return this.optional(element) || /^[А-ЯЁа-яё]{1,40}$/.test(value);
+  return this.optional(element) || /^[А-ЯЁа-яёA-Za-z]{1,40}$/.test(value);
 });
 
 function formValidate(selector) {
@@ -24,18 +24,18 @@ function formValidate(selector) {
     },
     messages: {
       name: {
-        required: "Введите ваше имя",
-        isName: "Введите правильное имя",
+        required: "Enter your name",
+        isName: "Please, enter the correct name",
       },
       phone: {
-        required: "Введите номер телефона",
-        isPhone: "Введите правильный номер телефона",
+        required: "Enter your phone number",
+        isPhone: "Please, enter the correct phone number",
       },
       isAgree: {
-        required: "Заполните данное поле",
+        required: "Please, fill this field",
       },
       messenger: {
-        required: "Заполните данное поле",
+        required: "Please, fill this field",
       }
     },
   });

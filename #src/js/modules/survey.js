@@ -9,24 +9,17 @@ function Survey(items) {
   this.currentQuestionInputs = []
   this.btnNext = $('[data-next]:not([type="submit"])')
   this.btnPrev = $('[data-prev]')
-
-  // this.prototype.enableMoveOn()
-  // this.prototype.enableMoveBackw()
-  // this.prototype.displayCurrentQuestion()
 }
 
 Survey.prototype.blockSubmit = function() {
-  $('[data-next]:not([type="submit"])'). on('click', function(e) {
-    e.preventDefault()
-  })
-  $('[data-prev]').on('click', function(e) {
-    e.preventDefault()
-  })
+  $('[data-next]:not([type="submit"])'). on('click', (e) => e.preventDefault())
+  $('[data-prev]').on('click', (e) => e.preventDefault())
 }
 
 Survey.prototype.enableMoveOn = function() {
   this.btnNext.on('click', () => {
     this.currentQuestionInputs = $(this.items[this.currentQuestion]).find('input[required]')
+
     this.currentQuestionInputs.each((idx) => {
       $(this.currentQuestionInputs[idx]).prop('checked') ? this.isSomethingChosen = true : ''
     })
@@ -47,9 +40,7 @@ Survey.prototype.enableMoveBackw = function() {
 }
 
 Survey.prototype.displayCurrentQuestion = function() {
-  this.items.each( (idx) => {
-    $(this.items[idx]).removeClass('shown')
-  })
+  this.items.each(idx => $(this.items[idx]).removeClass('shown'))
   $(this.items[this.currentQuestion]).addClass('shown')
 }
 

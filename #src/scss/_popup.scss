@@ -1,6 +1,5 @@
 .popup,
 .popup-message {
-
   position: fixed;
   z-index: 996;
   top: 0;
@@ -57,7 +56,6 @@
   // .popup__input
 
   &__input {
-
     width: 100%;
 
     &,
@@ -99,7 +97,6 @@
 }
 
 .form-label {
-
   // .form-label__checkbox-real
 
   &__checkbox-real {
@@ -121,6 +118,10 @@
     border-radius: 2px;
     position: relative;
     cursor: pointer;
+  }
+
+  &__checkbox-real:focus ~ .form-label__checkbox-fake {
+    border: 2px solid #000;
   }
 
   &__checkbox-real:checked ~ .form-label__checkbox-fake::after {

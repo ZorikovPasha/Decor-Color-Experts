@@ -7,7 +7,6 @@
 @import "_mob-menu.scss";
 
 .top {
-
   background-image: url('../images/top-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -586,6 +585,20 @@
     border-radius: 10px;
 
     @extend %state;
+  }
+
+  &__prev[disabled] {
+    cursor: default;
+    opacity: 1;
+  
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  
+    &:active {
+      opacity: 1;
+    }
   }
 
   // .item__next
